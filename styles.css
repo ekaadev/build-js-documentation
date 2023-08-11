@@ -1,0 +1,128 @@
+html {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.8;
+}
+
+body {
+    background-color: #0d0d16;
+    color: #ececec;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+#navbar {
+    min-width: 18rem;
+    width: 22rem;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.title {
+    color: rgb(255, 255, 72);
+}
+
+header {
+    margin: 27px 25px;
+}
+
+#navbar ul {
+    height: 84%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#navbar li {
+    list-style: none;
+}
+
+#navbar a {
+    text-decoration: none;
+    display: block;
+    padding: 13px 25px;
+    font-size: 18px;
+    color: #ececec;
+}
+
+#navbar a:hover {
+    color: rgb(255, 255, 72);
+}
+
+#main-doc {
+    position: absolute;
+    margin-left: 21rem;
+    padding: 35px;
+    font-size: 18px;
+}
+
+p {
+    margin-top: 1.2rem;
+}
+
+section li {
+    margin-top: 1.2rem;
+    margin-left: 3rem;
+}
+
+.box-code {
+    background-color: #505050;
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 70%;
+}
+
+code {
+    display: block;
+    padding-left: 20px;
+    font-size: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+    body {
+        width: 100%;
+    }
+
+    #navbar {
+        position: relative;
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    #navbar ul {
+        height: auto;
+        margin-top: 4rem;
+    }
+
+    #navbar a {
+        display: block;
+        margin-left: 20px;
+        padding: 1px 15px;
+    }
+
+    #navbar a:active {
+        color: rgb(255, 255, 72);
+    }
+
+    #main-doc {
+        position: relative;
+        margin-left: 0;
+    }
+
+    .box-code {
+        width: 100%;
+    }
+
+    code {
+        overflow-x: hidden;
+        padding: 10px;
+        font-size: 0.8rem;
+    }
+}
